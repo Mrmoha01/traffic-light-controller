@@ -50,7 +50,6 @@ traffic-light-controller/
 ├── src/traffic_light.c          state machine logic (no I/O, portable)
 ├── src/main.c                   console simulation (keyboard + timing)
 ├── tests/test_traffic_light.c   unit tests
-├── Makefile
 └── README.md
 ```
 
@@ -70,14 +69,6 @@ Tests:
 ```
 gcc -std=c11 -Wall -Wextra -Iinclude tests/test_traffic_light.c src/traffic_light.c -o test_runner.exe
 .\test_runner.exe
-```
-
-### Linux / macOS / WSL
-
-```
-make
-./traffic_light
-make test
 ```
 
 ## Controls
